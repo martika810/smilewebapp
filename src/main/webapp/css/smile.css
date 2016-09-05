@@ -1,0 +1,203 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.first_pannel{
+	background-image: url('../img/share_world.png');
+	background-position:center;
+	background-size:cover;
+	height:500px;
+}
+
+.error_message{
+	color:red;
+	padding-left:10px;
+}
+
+/************* TITLE BANNER **************/
+.title_banner{
+	height:150px;
+}
+
+.title_banner .text{
+	margin-top:15px;
+	color:#26a506;
+}
+
+.title_banner .like_sign{
+	margin-top:25px;
+}
+
+
+/************   SECOND PANNEL  **********/
+.second_pannel{
+	height:500px;
+	background-color:#41cf15;
+	position:relative;
+	
+}
+
+.second_pannel .wrapper{
+	width:700px;
+	position:relative;
+}
+#next-btn{
+	left:-100px;
+	margin-top:150px;
+	position:absolute;
+}
+
+.second_pannel .wrapper #main{
+	margin-top:50px;
+	left:150px;
+	position:absolute;
+}
+
+#like-btn{
+	left:600px;
+	margin-top:150px;
+	position:absolute;
+}
+
+.like{
+	width:50%;
+	height:100%;
+	float:left;
+	background-color: #2bddff;
+}
+
+.third_pannel{
+	height:500px;
+}
+
+/***********  SIGNING PANEL *********/
+.signing{
+	position:fixed;
+	left:0;
+	top:300px;
+	width:75px;
+	height:150px;
+	background-color:#41cf15;
+	border:5px solid #fff;
+	border-radius:0 10px 10px 0;
+	z-index:3;
+	box-shadow:3px 3px 3px #887C7C;
+}
+
+.signing img{
+	margin:15px 0 0 10px;
+}
+
+/*************  SIGN UP ***************/
+.floating_pannel{
+	position:fixed;
+	width:350px;
+	background-color:#41cf15;
+	border:5px solid #fff;
+	border-radius:0 10px 10px 0;
+	z-index:3;
+	box-shadow:3px 3px 3px #887C7C;
+	top:300px;
+	left:-360px;
+}
+
+.floating_pannel input{
+	border:none;
+	border-radius:20px;
+}
+
+.floating_pannel .email_input,
+.floating_pannel .password_input,
+.floating_pannel .confirm_input{
+	width:75%;
+	float:left;
+	color:#34a711;
+	font-weight:bold;
+	padding-left:35px;
+}
+
+.close_btn{
+	margin-top:10px;
+}
+
+.floating_pannel .submit_signup, 
+.floating_pannel .submit_login{
+	width:20%;
+	float:right;
+	background-color:#34a711;
+	background-repeat: no-repeat;
+	background-position:5px;
+	background-size: 50px 50px;
+	   
+	
+}
+.floating_pannel .email_input{
+	background-image: url('../img/email_icon.png');
+	background-repeat: no-repeat;
+	background-position:5px;
+	background-size: 30px 30px;
+}
+
+.floating_pannel .password_input,
+.floating_pannel .confirm_input{
+	background-image: url('../img/password_icon.png');
+	background-repeat: no-repeat;
+	background-position:5px;
+	background-size: 30px 30px;
+}
+.floating_pannel .submit_signup{
+	background-image: url('../img/signup_icon.png');
+	 padding: 64px 5px 64px 5px;	
+}
+.floating_pannel .submit_login{
+	background-image: url('../img/login_icon.png');
+	 padding: 38px 5px 38px 5px;
+}
+
+.floating_pannel .title{
+	border-bottom:2px solid white;
+	margin-bottom:10px;
+}
+
+.title .row{
+	padding-bottom:15px;
+	padding-right:5px;
+	padding-left:30px;
+}
+.signup, .login{
+	padding:20px;
+}
+		
+.signup input, .login input{
+	width:100%;
+	padding:8px 16px 16px 8px;
+	border-radius:10px;
+	margin:3px 0 3px 0;
+	
+}
+
+.floating_pannel h3{
+	margin-left:10px;
+	color:white;
+	text-align:center;
+	vertical-align:middle;
+	margin:10px 0 0 0;
+}
+
+/********* THIRD PANNEL *****************/
+
+.third_pannel{
+	background-image: url('../img/best.png');
+	background-color: #93eeff;
+	background-position:center;
+	background-size:cover;
+	padding-top:50px;
+	height:500px;
+}
+
+/************* LOG IN *****************/ 
+
+.footer{
+	height:100px;
+	background-color: #2bddff;
+}

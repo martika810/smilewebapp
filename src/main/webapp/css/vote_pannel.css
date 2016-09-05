@@ -1,0 +1,40 @@
+/**************  VOTE PANNEL ************/
+.vote_pannel {
+	height: 400px;
+	background-color: #41cf15;
+	position: relative;
+}
+
+.next {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #2bddff;
+}
+
+.vote_pannel .like_btn {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 110px;
+	cursor: pointer;
+}
+
+.vote_pannel .next_btn {
+	position: absolute;
+	margin-left: 250px;
+	margin-top: 110px;
+	cursor: pointer;
+}
+
+.vote_pannel .img_to_vote {
+	position: absolute;
+	margin-top: 20px;
+	margin-left: -180px;
+	border-radius: 200px;
+}
+
+.vote_pannel .time-loader {
+	position: fixed;
+	margin-top: 300px;
+	margin-left: 43%;
+}

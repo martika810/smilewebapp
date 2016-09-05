@@ -1,0 +1,80 @@
+/********** SELECT FILE PANNEL ************/
+.shadow_background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(51, 64, 64, .5);
+	z-index: 4;
+}
+
+#select_file_pannel {
+	background-color: #fff;
+	border: 5px solid #2bddff;
+	border-radius: 20px;
+	position: fixed;
+	width: 60%;
+	top: 20%;
+	left: 20%;
+	z-index: 5;
+	box-shadow: 3px 3px 3px #887C7C;
+}
+
+#select_file_pannel .title{
+	border-bottom: 2px solid #2bddff;
+	color:#2bddff;
+	text-align:center;
+	height:50px;
+}
+
+#select_file_pannel .title h3{
+	margin:5px 0 0 0;
+}
+
+#select_file_pannel .container {
+	padding: 20px;
+}
+
+#select_file_pannel .fileupload-buttonbar{
+	margin: 10px 0 10px 0;
+}
+
+#select_file_pannel .row {
+	height: 100px;
+}
+
+#select_file_pannel .row-uploaded {
+	background-color: #CCFFFF;
+	border-top: 1px solid #2bddff;
+	border-bottom: 1px solid #2bddff;
+	padding: 5px;
+}
+
+.row-uploaded img {
+	border-radius: 200px;
+}
+
+.row-uploaded p, .row-uploaded input[type='checkbox'] {
+	margin-top: 30px;
+}
+
+#fileupload {
+	height: 75px;
+}
+#select_file_pannel textarea{
+	height:80px;
+	width:100%;
+	max-width:100%;
+	margin-top:10px;
+}
+
+#select_file_pannel .delete_row_btn{
+	margin-top:25px;
+	padding:10px;
+}
+
+textarea {
+	border-radius:10px;
+	border:1px solid #2bddff;
+}

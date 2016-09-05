@@ -1,0 +1,67 @@
+#setting_pannel{
+	background-color: #c9feff;
+	display:none;
+	border: 1px dotted  #2bddff;
+	padding:20px;
+	border-radius:10px;
+	
+}
+
+#setting_pannel .title{
+	text-align: center;
+    border-bottom: 1px solid #5BC0DE;
+    color: #5BC0DE;
+    margin-top: 0;
+    vertical-align:middle;
+}
+#setting_pannel .title h3{
+	margin:0 auto;
+	padding:10px;
+}
+
+#setting_pannel .custom_row{
+	height:150px;
+
+}
+
+#setting_pannel #update_profile{
+	float:right;
+	boder:none;
+}
+
+#setting_pannel .input_text{
+	float:left;
+	width:100%;
+	margin: 30px 5px 0px 5px;
+	
+}
+
+.input_text input{
+	width:100%;
+	padding:10px;
+	border-radius:10px;
+	border: 1px solid #5BC0DE;
+}
+
+.visibility_radio,.rank_visibility_radio{
+	margin-top:25px;
+	background-color: #2bddff;
+    border-radius: 10px;
+    border: 1px solid #5BC0DE;
+}
+
+.visibility_radio .item_radio, 
+.rank_visibility_radio .item_radio{
+	padding: 10px;
+  
+}
+
+.item_radio input{
+	float:left;
+	padding-left:20px;
+
+}
+
+.botton_border{
+	border-bottom: 1px solid #5BC0DE;
+}

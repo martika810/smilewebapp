@@ -1,0 +1,72 @@
+/***************** PROFILE CONTENT *********/
+#profile_content .custom_row, #ranking_content .custom_row {
+	height: 290px;
+	text-align: center;
+	margin: 20px 0px 20px 0px;
+}
+
+#ranking_content h1, #profile_content h1{
+	color:grey;
+}
+
+#profile_content .add_btn, #profile_content .setting_btn {
+	margin: 70px 0 0 0;
+	cursor: pointer;
+}
+
+.photo_spot img, .rank_photo_spot img {
+	border-radius: 200px;
+}
+
+.photo_spot, .rank_photo_spot {
+	position: relative;
+}
+
+.photo_spot .photo_vote_pannel,.rank_photo_spot .photo_vote_pannel {
+	position: absolute;
+	width:250px;
+	max-height:70px;
+	margin-left:-240px;
+	margin-top:195px;
+	background-color: white;
+	border:1px solid #34a711;
+	padding:5px;
+	border-radius: 100px;
+}
+
+
+.photo_vote_pannel img {
+	z-index: 4;
+}
+.photo_vote_pannel .image-info{
+	padding:5px;
+	text-align:center;
+}
+
+.photo_vote_pannel textarea{
+	 width: 175px;
+	 max-width:175px;
+	 border-radius: 100px;
+   	 border: 1px solid #34a711;
+   	 background-color: rgba(193, 241, 179, 0.7);
+     margin-top: 4px;
+}
+
+.photo_vote_pannel textarea:focus{
+	outline:none !important;
+	border-radius: 100px;
+   	border: 1px solid #28860C;
+   	box-shadow: 0 0 5px #28860C;
+}
+
+.photo_spot .vote_number , .rank_photo_spot .vote_number{
+	width: 40px;
+	text-align: center;
+	color: #34a711;
+	position: absolute;
+	z-index: 5;
+	margin-left: -20px;
+	margin-top: -55px;
+}
+
+

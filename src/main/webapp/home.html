@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link
+	href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.fileupload.css">
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href="css/smile_home.css" rel="stylesheet">
+<script data-main="js/page_private" src="js/lib/require.js"></script>
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<!-- Google Tag Manager -->
+	<script>
+  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  			ga('create', 'UA-68721029-1', 'auto');
+  			ga('send', 'pageview');
+
+		</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+	
+	<!-- ------------------ HEADER -------------------- -->
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<img id="home_btn" src="img/icon.png" height="100px" width="100px">
+
+				</div>
+				<div class="col-sm-7">
+					<input class="search_input" type="text" name ="search_text" placeholder="Search your friends by their email">
+					<button id="search_submit" type="button" class="btn btn-success">Search</button>
+					
+				</div>
+				<div id="notification_icon" class="col-sm-1">
+					<img id="notification_btn" src='img/notification_icon.png' height="80px" width="80px">
+					
+				</div>
+				<div class="col-sm-1">
+					<div id="facebook_invite">
+						<a href="#/" onclick="FBInvite()"> <img
+							src="img/invite_facebook.jpg" height="80px" width="80px"
+							alt="Invite Facebook Friends">
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<img id="logout_btn" src="img/profile.png" height="80px"
+						width="80px">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- -----------------  VOTE PANNEL --------------- -->
+	<div class="vote_pannel">
+		<img class="next_btn" src="img/next.png" height="180px" width="180px">
+		<div class="next"></div>
+
+		<img class="like_btn" src="img/like.png" height="180px" width="180px">
+		<!-- ------  SPINNER ----------------->
+		<div class="timer-loader hidden"></div>
+	</div>
+	<div class="tab_pannel">
+		<nav class="navbar navbar-default">
+			<ul class="nav nav-tabs col-sm-3 col-md-offset-5">
+				<li class="active" data-id="ranking"><a href="#/">Ranking</a></li>
+				<li data-id="profile"><a href="#/">Profile</a></li>
+			</ul>
+		</nav>
+		<!-- -------------RANKING PANNEL --------------- -->
+		<div id="ranking_content">
+			<div class="container"></div>
+		</div>
+		<!-- -------------PROFILE PANNEL --------------- -->
+		<div id="profile_content" class="hidden">
+			<div class="container"></div>
+		</div>
+	</div>
+	<!--  ----------------- FOOTER --------------------- -->
+	<div class="footer"></div>
+
+	<!--------  SELECT FILE PANNEL ------->
+	<div class="shadow_background hidden"></div>
+	<div id="response_pannel" class="hidden"></div>
+	<div id="select_file_pannel" class="hidden">
+		<div class="container col-lg-12">
+			<div class="title">
+				<h3>Add your selfies</h3>
+			</div>
+			<form id="fileupload" method="POST" enctype="multipart/form-data">
+				<!-- Redirect browsers with JavaScript disabled to the origin page -->
+				<noscript>
+					<input type="hidden" name="redirect"
+						value="https://blueimp.github.io/jQuery-File-Upload/">
+				</noscript>
+				<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+				<div class="row fileupload-buttonbar">
+					<div class="col-lg-7">
+						<!-- The fileinput-button span is used to style the file input field as button -->
+						<span class="btn btn-success fileinput-button"> <i
+							class="glyphicon glyphicon-plus"></i> <span>Add selfie...</span>
+							<input type="file" name="files[]" multiple>
+						</span>
+						<button class="btn btn-primary upload" type="button">
+							<i class="glyphicon glyphicon-upload"></i> <span
+								class="btn-upload">Upload</span>
+						</button>
+						<button type="button" class="btn btn-warning cancel">
+							<i class="glyphicon glyphicon-ban-circle"></i> <span
+								class="btn-cancel">Cancel</span>
+						</button>
+
+					</div>
+					<!-- The global progress state -->
+					<div class="col-lg-5 fileupload-progress fade">
+						<!-- The global progress bar -->
+						<div class="progress progress-striped active" role="progressbar"
+							aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar progress-bar-success" style="width: 0%;"></div>
+						</div>
+						<!-- The extended global progress state -->
+						<div class="progress-extended">&nbsp;</div>
+					</div>
+				</div>
+				<!-- The table listing the files available for upload/download -->
+				<table role="presentation" class="table table-striped">
+					<tbody class="files"></tbody>
+				</table>
+			</form>
+
+		</div>
+	</div>
+	<div id="fb-root"></div>
+	<script>
+	(function(d, s, id) {
+ 		 var js, fjs = d.getElementsByTagName(s)[0];
+  		 if (d.getElementById(id)) return;
+  			js = d.createElement(s); js.id = id;
+  			js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4&appId=1705699639653728";
+  			fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+</html>

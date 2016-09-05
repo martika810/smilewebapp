@@ -1,0 +1,76 @@
+/************* NOTIFICATION PANNEL **********/
+.header #notification_btn{
+	cursor: pointer;
+	margin-top: 10px;
+	float: right;
+}
+#notification_pannel{
+	position:absolute;
+	width:300px;
+	margin-top:10px;
+	padding:5px;
+	top:100px;
+	background-color:#fff;
+	border-radius:10px;
+	border: 3px solid #2bddff;
+	box-shadow: 0px 3px 5px 0px rgba(100, 100, 100, 0.49);
+	z-index: 10;
+	
+}
+
+#notification_pannel:before {
+content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	top:0;
+	margin-top:-20px;
+    left:25px;
+	border: 10px solid transparent;
+	border-bottom-color:#fff;
+	z-index: 10;
+}
+#notification_pannel .not_seen{
+	background-color: #c9feff;
+}
+#notification_pannel .seen{
+	background-color: white;
+}
+
+#notification_pannel .row{
+	height:100px;
+	margin:0 5px 0 5px;
+	padding-top:10px;
+	border-bottom: 1px solid #2bddff;
+}
+#notification_pannel .first{
+	margin-top:20px;
+}
+#notification_pannel .notification_message,
+#notification_pannel .target_image_spot{
+	margin-left:5px;
+}
+
+#notification_pannel .row .sender_image,
+#notification_pannel .target_image{
+	border-radius: 10px;
+}
+
+#notification_icon .number_icon{
+	width:30px; 
+    height:30px;
+    position: relative;
+    background-color:red;
+    border-radius:100px;
+    left: 35px;
+}
+#notification_icon .number_txt{
+	background:red; 
+	color:white;
+    font-size:medium;
+    position: absolute;
+    width:20px; 
+    text-align:center;
+    top: 4px;
+  	left: 5px;
+}
